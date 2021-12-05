@@ -1,0 +1,681 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width:1130px)
+{
+    .f1
+    {
+        justify-content: center;
+        padding-top: 15em;
+    }
+    .f2
+    {
+        justify-content: center;
+        padding-top: 15em;
+    }
+    .f3
+    {
+        justify-content: center;
+        padding-top: 15em;
+    }
+    .btn-pos
+    {
+        flex-direction: column;
+    }
+    .btn
+    {
+        width: 215px;
+        height: 40px;
+        padding-top: 5px;
+        margin: 0;
+        margin-bottom: 7px;
+        margin-right: 50px;
+    }
+    .f5
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 15em;
+    }
+    .sb
+    {
+        margin-top: 20em;
+        margin-bottom: 20em;
+    }
+}
+a 
+{
+  text-decoration: none;
+}
+.brdr_s3
+{
+    border-style: solid;
+    border-color: silver;
+    width:250px;
+}
+.color_red
+{
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 100em black, 0 0 0.1em white;
+}
+.border_color:hover
+{
+    border-style: solid;
+    border-color: red;
+}
+.mrgn
+{
+    margin-top: 2em;
+}
+.mrgn_bt
+{
+    margin-bottom: 2em;
+}
+html 
+{
+    scroll-behavior:smooth;
+}
+.scale
+{
+    transition: 1s;
+}
+.scale:hover{
+    transform: scale(1.05);
+}
+.scale_2 {
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale_2 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.scale_2 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.bg
+{
+    background: radial-gradient(silver, grey);
+}
+.bgi
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    filter: blur(1px);
+    z-index:-2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+#first
+{
+    background-image: url(atmosphere-1.jpg);
+    filter: blur(3px);
+}
+#second
+{
+    background-image: url(8b46561s-1920.jpg);
+}
+#third
+{
+    background-image: url(KBcanW.jpg);
+    filter: blur(2px);
+}
+#fourth
+{
+    background-image: url(porshe_background.jpg);
+    filter: blur(1.5px);
+}
+body {
+    font-family: sans-serif;
+}
+.topnav {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 8em;
+    background: linear-gradient(to top, #fefcea, #ed2b2b);
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    left: 0;
+    top: 0;
+    z-index:2;
+}
+.footer {
+    background: linear-gradient(to top, #fefcea, #ed2b2b);
+    padding: 2em;
+    text-align: center;
+    color: black;
+}
+.btn-pos {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-family: Oswald;
+}
+.logo {
+    float: left;
+    margin: 10px 5px;
+    height: 50px;
+    width: 50px;
+
+    transition: transform .2s;
+    border-radius: 10%;
+    transform: translateX(-150%);
+}
+.logo:hover {
+    transform: scale(1.4) translateX(-120%);
+}
+.btn {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.25s;
+    background-size: 200% auto;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #0a0303;
+    border-width: thin;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+}
+.btn:hover 
+{
+    border-style: solid;
+    border-color: white;
+}
+ .btn:active
+    {
+      border-color: black;
+    }
+.container 
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 90%;
+    min-width: 90%;
+    justify-content: space-around;
+}
+.t1
+{
+    margin-top: 2em;
+}
+.text1
+{
+    font-size: 50px;
+    font-family: Oswald;
+    color:black;
+    width:100%;
+    padding-bottom: .3em;
+    text-shadow: 1px 1px 2px red, 0 0 100em black, 0 0 0.1em white;
+}
+.f1
+{
+    flex-direction: row;
+    margin-top: 10em;
+    margin-bottom: 8em;
+/*    padding: 8em 5em 0 5em;*/
+}
+
+.t_f
+{
+    font-size: 30px;
+    font-family: Oswald;
+    color:black;
+    position: relative;
+    top: auto;
+    text-shadow: 1px 1px 10px white;
+    text-align:left;
+    font-weight: bold;
+}
+.t_f_2
+{
+    font-size: 10px;
+    font-family: Oswald;
+    position: relative;
+    top: auto;
+    color:silver;
+    text-shadow: black 1px 0 10px;
+}
+.t2
+{
+    margin-top: 4em;
+/*    position: absolute;*/
+/*    transform: translateX(420%) translateY(-90%);*/
+}
+.t_p
+{
+    font-size: 15px;
+    font-family: Oswald;
+    color:black;
+    text-shadow: 1px 3px 4px red, 0 0 100em black, 0 0 0.1em white;
+    
+}
+.center
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.p_N
+{
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    width: 80%;
+    border-color: black;
+    border-style:solid;
+}
+.blur
+{
+    filter: blur(5px);
+}
+{
+    flex-direction: row;
+}
+.b_1
+{
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    transform: skew(-7deg);
+    z-index: -1;
+}
+.t_f_3
+{
+    margin: 10px;
+    padding: 10px;
+    background: transparent;
+    border-style: solid;
+    border-color: silver;
+    border-radius: 20px;
+    overflow:hidden;
+    z-index: -1;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    transform: skew(-7deg);
+}
+
+.ppp
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+.pictures
+{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    border-color: black;
+    border-style:solid;
+    flex-direction: column;
+}
+.t_p_1
+{
+    width: 60%;
+    margin-left: 4em;
+    margin-right: 2em;
+    
+}
+.pictures_1
+{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.t_o
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    font-family: Oswald;
+    color:white;
+    text-shadow: 1px 1px 10px black;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin-top: 1em;
+}
+.f2
+{
+    flex-direction: row;
+    margin-top: 8em;
+    margin-bottom: 7em;
+}
+.t_o_2
+{
+    padding-top: 2em;
+}
+.text2
+{
+    padding-bottom: .3em;
+    font-size: 30px;
+    font-family: Oswald;
+    color:black;
+    text-shadow: 1px 1px 2px red, 0 0 100em black, 0 0 0.1em white;
+}
+.container_1
+{
+    
+}
+.t_r
+{
+    width: 90%;
+    color:white;
+    text-indent: 1em;
+    font-size: 23px;
+    font-family: Oswald;
+    text-shadow: 1px 1px 10px black;
+    font-weight: bold;
+}
+.f3
+{
+    width:100%;
+    flex-direction: row;
+    margin-top: 8em;
+    margin-bottom: 7em;
+}
+.video
+{
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100%;
+}
+.t_d
+{
+    text-decoration: underline;
+}
+.img_porsche
+{
+    height:150px;
+    width:240px;
+    border-radius:20px;
+    overflow:hidden;
+    transform: translateY(-20%) translateX(0.8%);
+}
+.t_porsche
+{
+    font-size: 13px;
+    font-family: Oswald;
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 2px red, 0 0 100em black, 0 0 0.1em white;
+    position:absolute;
+    transform: translateX(20%) translateY(160%);
+}
+.t_porsche_h
+{
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 10px red;
+    font-size: 11px;
+    font-family: Oswald;
+    position: absolute;
+    transform: translateX(40%) translateY(310%);
+}
+#p1
+{
+    height:300px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    display: flex;
+}
+.logo_1
+{
+    width:15px;
+    height:15px;
+    border-radius:4px;
+    box-shadow: 0 2px 20px 2px red;
+    position: absolute;
+    transform: translateX(-700%);
+}
+.logo_2
+{
+    width:15px;
+    height:15px;
+    border-radius:10px;
+    box-shadow: 0 2px 20px 2px white;
+    position: absolute;
+    transform: translateX(-700%);;
+}
+.logo_3
+{
+    width:15px;
+    height:15px;
+    border-radius:5px;
+    box-shadow: 0 2px 20px 2px white;
+    position: absolute;
+    transform: translateX(-700%);;
+}
+.logo_4
+{
+    width:15px;
+    height:15px;
+    border-radius:10px;
+    box-shadow: 0 2px 20px 2px green;
+    position: absolute;
+    transform: translateX(-700%);;
+}
+.img_lans
+{
+    height:150px;
+    width:240px;
+    border-radius:20px;
+    overflow:hidden;
+    transform: translateY(-63%);
+}
+.scale_img
+{
+    transition: 1s;
+}
+.scale_img:hover
+{
+    transform: scale(1.05);
+}
+.t_porsche_2
+{
+    font-size: 13px;
+    font-family: Oswald;
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 2px red, 0 0 100em black, 0 0 0.1em white;
+    position:absolute;
+    transform: translateX(7%) translateY(28%);
+}
+.t_porsche_h_2
+{
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 10px red;
+    font-size: 11px;
+    font-family: Oswald;
+    position: absolute;
+    transform: translateX(10%) translateY(150%);
+}
+#p2
+{
+    height: 300px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_5
+{
+    border-radius:5px;
+    width:20px;
+    height:15px;
+    box-shadow: 0 2px 20px 2px orange;
+    position: absolute;
+    transform: translateX(-500%);
+}
+.logo_6
+{
+    border-radius:5px;
+    width:15px;
+    height:15px;
+    box-shadow: 0 2px 20px 2px white;
+    position: absolute;
+    transform: translateX(-650%);
+}
+.logo_7
+{
+    border-radius:5px;
+    width:15px;
+    height:15px;
+    box-shadow: 0 1px 10px 1px yellow;
+    position: absolute;
+    transform: translateX(-650%);
+}
+.f4
+{
+    padding: 8em;
+    padding-bottom: 0;
+}
+.Record
+{
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.R_V
+{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    height: 315px;
+}
+.fl
+{
+    width: 350px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+}
+.R_V_2
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 315px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.f5
+{
+    width:100%;
+    margin-top: 6.5em;
+    margin-bottom: 7em;
+}
+.test_q
+{
+    color:white;
+    text-indent: 1em;
+    font-size: 15px;
+    font-family: Oswald;
+    text-shadow: 1px 1px 10px black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#test div {
+    margin-bottom: 30px;
+}
+#test div p
+{
+  text-indent: 0;
+  font-size: 25px;
+  text-align: center;
+}
+.correct {
+    border: 2px solid green;
+}
+.incorrect {
+    border: 2px solid red;
+}
+.quiz
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    padding: 3em;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.sub {
+    width: 200px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 2em;
+}
+.sub:active
+{
+ border-color: black;
+ background: #dcdcdc;
+}
+.testq
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input
+{
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  font-family: Oswald;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: .5s;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.input:hover
+{
+  transform: scale(1.2);
+  background: silver;
+}

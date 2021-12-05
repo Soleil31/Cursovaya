@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Style_Curs.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Курсовая</title>
+</head>
+<body>
+    <div id="third" class="bgi">
+    </div>
+    <script src="anime.min.js"></script>
+    <div class="topnav">
+        <img src="https://img.icons8.com/ios-filled/100/000000/car-racing.png" alt="logo" class="logo">
+        <nav class="btn-pos">
+            <a href="index.html" class="btn scale">Главная</a>
+            <a href="Curs_str_2.html" class="btn scale">О трассе</a>
+            <a href="Curs_str_3.html" class="btn scale">Рекорд трассы</a>
+            <a href="Curs_str_4.html" class="btn scale">Лучшие заезды</a>
+            <a href="Curs_str_5.html" class="btn scale">Проверка знаний</a>
+        </nav>
+    </div>
+    <div class="container f5">
+    <div class="quiz">
+    <div id="test">
+      <div class="test_q">
+          <p>Кто (пилот) установил абсолютный рекорд Нюрбургринга среди модернизированных серийных автомобилей?</p>
+          <input class="input" data-right="Ларс Керн">
+      </div>
+      <div class="test_q">
+          <p>Сколько существует трасс, называемых "Нюрбургринг"?</p>
+          <input class="input" data-right="2">
+      </div>
+      <div class="test_q">
+          <p>В каком году был установлен новый мировой рекорд среди электромобилей (концепт или прототип) не допущенных для эксплуатации на дорогах общего пользования?</p>
+          <input class="input" data-right="2019">
+      </div>
+    <div class="test_q">
+      <p>Какая компания сегодня является абсолютным рекордсменом по времени прохождения круга?</p>
+      <input class="input" data-right="Porsche">
+    </div>
+  </div>
+      <button class="sub" id="button">Проверка</button>
+    <script type="text/javascript">
+    let button = document.querySelector('#button');
+
+  button.addEventListener('click', function() {
+      let inputs = document.querySelectorAll('#test input');
+      for (let input of inputs) {
+          if (input.value == input.dataset.right) {
+              input.classList.add('correct');
+          } else {
+              input.classList.add('incorrect');
+          }
+      }
+  });
+    </script>
+</div>
+</div>
+    <div class="footer">
+        2021&copy; Student MIREA ALL RIGHTS RESERVED
+    </div>
+</body>
+</html>
